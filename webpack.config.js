@@ -1,5 +1,5 @@
 const path = require('path');
-const htmlWP = require('html-webpack-plugin');
+const HtmlWP = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -19,7 +19,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new htmlWP({
+        new HtmlWP({
             template: './src/index.html',
             filename: 'index.html',
             inject: 'body',
